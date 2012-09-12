@@ -1,0 +1,44 @@
+
+// Global
+// ======================
+
+* {
+   -webkit-text-size-adjust:none;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+  background:#fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size:14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Typography
+// ======================
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 20px;
+}

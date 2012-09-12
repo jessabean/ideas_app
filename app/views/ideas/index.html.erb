@@ -1,27 +1,25 @@
-<h1>Listing ideas</h1>
+<div class="page-content">
+  <header class="page-header">
+    <h1>Browse Ideas</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Picture</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <ul class="toolbar">
+      <li><%= link_to 'New Idea', new_idea_path %></li>
+    </ul>
+  </header>
 
-<% @ideas.each do |idea| %>
-  <tr>
-    <td><%= idea.name %></td>
-    <td><%= idea.description %></td>
-    <td><%= idea.picture %></td>
-    <td><%= link_to 'Show', idea %></td>
-    <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-    <td><%= link_to 'Destroy', idea, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+  <% @ideas.each do |idea| %>
 
-<br />
+    <div class="idea">
+      <%= link_to image_tag(idea.picture), idea, :class => "idea-thumb" %>
+      <div class="details">
+        <h2><%= link_to idea.name, idea %></h2>
+        <p><%= idea.description %></p>
+      </div>
+      <div class="actions">
+        <%= link_to 'Edit', edit_idea_path(idea) %>
+        <%= link_to 'Destroy', idea, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
 
-<%= link_to 'New Idea', new_idea_path %>
+</div>

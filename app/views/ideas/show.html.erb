@@ -1,20 +1,16 @@
-<p id="notice"><%= notice %></p>
+<div id="notice"><%= notice %></div>
 
-<p>
-  <b>Name:</b>
-  <%= @idea.name %>
-</p>
+<div class="page-content narrow">
+  <header class="page-header">
+    <h1><%= @idea.name %></h1>
+    <ul class="toolbar">
+      <li><%= link_to 'Edit', edit_idea_path(@idea) %></li>
+      <li><%= link_to 'Back', ideas_path %></li>
+    </ul>
+  </header>
 
-<p>
-  <b>Description:</b>
-  <%= @idea.description %>
-</p>
-
-<p>
-  <b>Picture:</b>
-  <%= image_tag(@idea.picture.url, :width => 600) if @idea.picture.present? %>
-</p>
-
-
-<%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
+  <div class="idea-image">
+    <%= image_tag(@idea.picture.url, :width => 600) if @idea.picture.present? %>
+  </div>
+  <p class="desc"><%= @idea.description %></p>
+</div>

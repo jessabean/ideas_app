@@ -10,7 +10,7 @@
   </header>
 
   <div class="idea-image">
-    <%= image_tag(@idea.picture.url, :width => 600) if @idea.picture.present? %>
+    <%= image_tag(@idea.picture.url, :width => 80) if @idea.picture.present? %>
   </div>
   <p class="desc"><%= @idea.description %></p>
 </div>

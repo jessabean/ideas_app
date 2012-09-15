@@ -1,0 +1,22 @@
+// Nav
+
+.main-nav {
+  float: right;
+  padding-top: 14px;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    width: 80px;
+  }
+
+  a {
+    @include rounded(4px);
+    background: #FF6B6B;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+  }
+}

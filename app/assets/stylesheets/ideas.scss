@@ -12,3 +12,19 @@
 @import "components/forms";
 @import "components/buttons";
 @import "components/modules";
+
+
+#page-header {
+  background: #333;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+
+.logo {
+  background: url(app_logo.gif) 0 0 no-repeat;
+  display: inline-block;
+  height: 47px;
+  text-indent: -9999px;
+  width: 215px;
+}
+

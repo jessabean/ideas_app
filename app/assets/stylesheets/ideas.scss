@@ -14,7 +14,7 @@
 @import "components/modules";
 
 
-#page-header {
+#app-header {
   background: #333;
   margin-bottom: 40px;
   padding: 10px 0;
@@ -29,5 +29,11 @@
 }
 
 .page-header {
+  border-bottom: 1px solid #ddd;
   overflow: hidden;
+}
+
+.toolbar {
+  float: right;
+  padding-top: 18px;
 }

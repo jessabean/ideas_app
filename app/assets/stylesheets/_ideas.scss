@@ -28,6 +28,10 @@
   width: 215px;
 }
 
+.page-content {
+  min-height: 400px;
+}
+
 .page-header {
   border-bottom: 1px solid #ddd;
   overflow: hidden;
@@ -37,3 +41,4 @@
   float: right;
   padding-top: 18px;
 }
+

@@ -2,18 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "mixins";
-
-@import "base/reset";
-@import "base/structure";
-@import "base/global";
-
-@import "components/nav";
-@import "components/forms";
-@import "components/buttons";
-@import "components/modules";
-
-
 #app-header {
   background: #333;
   margin-bottom: 40px;
@@ -34,6 +22,7 @@
 
 .page-header {
   border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 

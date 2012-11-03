@@ -1,4 +1,6 @@
 Railsgirls::Application.routes.draw do
+  resources :comments
+
   resources :ideas
 
   # The priority is based upon order of creation:

@@ -15,6 +15,8 @@ class IdeasController < ApplicationController
   def show
     @idea = Idea.find(params[:id])
 
+    @comment = @idea.comments.build
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @idea }

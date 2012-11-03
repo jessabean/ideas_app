@@ -13,4 +13,17 @@
     <%= image_tag(@idea.picture.url, :width => 80) if @idea.picture.present? %>
   </div>
   <p class="desc"><%= @idea.description %></p>
+  
+  <div class="comments">
+    <h3>Comments</h3>
+    <ul>
+    <% @idea.comments.each do |comment| %>
+      <li>
+        <h4><%= comment.user_name %></h4>
+        <p><%= comment.body %><p>
+      </li>
+    <% end %>
+    </ul>
+    <%= render 'comments/form' %>
+  </div>
 </div>

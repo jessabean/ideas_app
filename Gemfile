@@ -7,6 +7,8 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'carrierwave', '>= 0.6.2'
+gem 'foreigner'
+gem 'mini_magick'
 gem 'json'
 
 # Gems used only for assets and not required

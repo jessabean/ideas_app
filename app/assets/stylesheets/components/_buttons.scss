@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-primary {
+  background: $teal;
+  color: #444;
+  padding: 5px 10px;
+
+  &:visited {
+    color: #444;
+  }
+
+  &:hover {
+    background: $dark-teal;
+  }
+}

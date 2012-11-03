@@ -6,18 +6,24 @@
 
     <h1>Browse Ideas</h1>
   </header>
+  <% if @ideas.blank? %>
+    <%= render :partial => "blank" %>
+  <% else %>
+    <% @ideas.each do |idea| %>
+      <div class="idea">
+        <%= link_to idea do %>
+          <%= thumbnail(idea) %>
+        <% end %>
+        <div class="details">
+          <h2><%= link_to idea.name, idea %></h2>
+          <p><%= idea.description %></p>
+        </div>
+        <div class="actions">
+          <%= link_to 'Edit', edit_idea_path(idea) %>
+          <%= link_to 'Destroy', idea, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+        </div>
+      </div>
+    <% end %>
 
-  <% @ideas.each do |idea| %>
-    <div class="idea">
-      <%= thumbnail(idea) %>
-      <div class="details">
-        <h2><%= link_to idea.name, idea %></h2>
-        <p><%= idea.description %></p>
-      </div>
-      <div class="actions">
-        <%= link_to 'Edit', edit_idea_path(idea) %>
-        <%= link_to 'Destroy', idea, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
-      </div>
-    </div>
   <% end %>
 </div>

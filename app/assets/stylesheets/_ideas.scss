@@ -42,3 +42,13 @@
   padding-top: 18px;
 }
 
+// Blank State
+
+.blank-state {
+  @include rounded(4px);
+  background: $lightest_gray url(cloud_up.png) 20px 20px no-repeat;
+  margin: 0 auto;
+  min-height: 200px;
+  padding: 20px 20px 20px 190px;
+  width: 600px;
+}
